@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="vazifa_5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="express-delivery-service-icon-courier-boy-riding-motor-bike-with-boxes_48369-16674.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Jap-pJ-4F0">
+                                <rect key="frame" x="57" y="333" width="300" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="2WQ-Ga-OMu"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="ZT5-7h-xqd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="a0s-kA-g6t"/>
+                                    <constraint firstAttribute="width" constant="300" id="gjV-qv-sV7"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hrC-uq-gjk">
+                                <rect key="frame" x="30" y="54" width="161" height="34.333333333333343"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ice-aT-0HW">
+                                        <rect key="frame" x="0.0" y="0.0" width="47" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="EN">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QrY-4B-Ncd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrr-xc-bHQ">
+                                        <rect key="frame" x="57" y="0.0" width="47" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="RU">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonru:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FQL-OI-JTR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEf-Pz-1JF">
+                                        <rect key="frame" x="114" y="0.0" width="47" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="UZ">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonuz:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sJs-dC-Omk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xush kelibsiz!   bu ilova orqali siz hohlagan narsangizni buyurtma berishingiz mumkin." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOm-i3-1pE">
+                                <rect key="frame" x="16" y="593" width="382" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="tintColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="lOm-i3-1pE" firstAttribute="top" secondItem="Jap-pJ-4F0" secondAttribute="bottom" constant="30" id="Ajq-qN-dia"/>
+                            <constraint firstItem="lOm-i3-1pE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J50-bh-8JS"/>
+                            <constraint firstItem="Jap-pJ-4F0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N7h-ec-nlV"/>
+                            <constraint firstAttribute="trailing" secondItem="lOm-i3-1pE" secondAttribute="trailing" constant="16" id="OV8-Md-RXU"/>
+                            <constraint firstItem="Jap-pJ-4F0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OaP-CY-szB"/>
+                            <constraint firstItem="hrC-uq-gjk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="10" id="QYN-2B-SSI"/>
+                            <constraint firstItem="hrC-uq-gjk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="X12-mv-Edx"/>
+                            <constraint firstItem="lOm-i3-1pE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="XQG-P3-Lpy"/>
+                            <constraint firstItem="Jap-pJ-4F0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xXS-VJ-eEZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="lOm-i3-1pE" id="lz2-IZ-JNy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.43478260869566" y="-28.794642857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="express-delivery-service-icon-courier-boy-riding-motor-bike-with-boxes_48369-16674.jpg" width="2000" height="2000"/>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
